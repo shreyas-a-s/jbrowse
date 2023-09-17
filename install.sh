@@ -29,11 +29,11 @@ function getJBrowseWithPluginSupport {
 flag=true
 echo -e "################################\n##### JBrowse Installation #####\n################################"
 while [ $flag == true ] ; do
-    read -r -p "You want plugin-support? (yes/no): " choice
-	if [ "$choice" == 'yes' ]; then
+    read -r -p "You want plugin-support? (yes/no): " jbrowse_choice
+	if [ "$jbrowse_choice" == 'yes' ]; then
 		getJBrowseWithPluginSupport
 		flag=false
-	elif [ "$choice" == 'no' ]; then
+	elif [ "$jbrowse_choice" == 'no' ]; then
 		getJBrowseNormal
 		flag=false
 	else
